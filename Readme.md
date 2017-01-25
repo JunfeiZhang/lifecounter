@@ -7,4 +7,8 @@
 * As a user, when I rotate the device (landscape to portrait mode or vice versa), it should resize itself evenly.
 * As a user, when I run the app on different devices, it should seem "equally balanced" on each device, regardless of orientation. Players' life total labels should be proportional, buttons proportional, and so on.
 
-![alt tag]()
+##Screenshot
+![alt tag](https://github.com/harvey940906/lifecounter/blob/master/screenshot/emulator.png)
+emulator
+![alt tag](https://github.com/harvey940906/lifecounter/blob/master/screenshot/phone.jpg)
+phone
