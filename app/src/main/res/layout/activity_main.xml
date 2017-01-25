@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.washington.jz39.lifecounter.MainActivity">
+
+    <!--<EditText-->
+        <!--android:hint="2-8 players"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/input"/>-->
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Start"-->
+        <!--android:id="@+id/start"/>-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/player1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player1: "
+            android:textSize="8pt"
+            android:id="@+id/p1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p1heal"
+            android:textSize="8pt"
+            android:text="20"/>
+
+        <Button
+            android:text="-5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/p1minFive" />
+
+        <Button
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p1min" />
+
+        <Button
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p1add" />
+        <Button
+            android:text="+5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p1addFive" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loser"
+        android:text=""
+        android:textSize="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/player2"
+        android:layout_below="@+id/player1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player2: "
+            android:textSize="8pt"
+            android:id="@+id/p2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p2heal"
+            android:textSize="8pt"
+            android:text="20"/>
+
+        <Button
+            android:text="-5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/p2minFive" />
+
+        <Button
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p2min" />
+
+        <Button
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p2add" />
+        <Button
+            android:text="+5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p2addFive" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/player3"
+        android:layout_below="@+id/player2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player3: "
+            android:textSize="8pt"
+            android:id="@+id/p3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p3heal"
+            android:textSize="8pt"
+            android:text="20"/>
+
+        <Button
+            android:text="-5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/p3minFive" />
+
+        <Button
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p3min" />
+
+        <Button
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p3add" />
+        <Button
+            android:text="+5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p3addFive" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/player4"
+        android:layout_below="@+id/player3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player4: "
+            android:textSize="8pt"
+            android:id="@+id/p4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p4heal"
+            android:textSize="8pt"
+            android:text="20"/>
+
+        <Button
+            android:text="-5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/p4minFive" />
+
+        <Button
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p4min" />
+
+        <Button
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p4add" />
+        <Button
+            android:text="+5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p4addFive" />
+
+    </LinearLayout>
+
+</RelativeLayout>
